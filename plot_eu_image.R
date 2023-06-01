@@ -7,14 +7,6 @@ library(ggplot2)
 library(gridExtra)
 library(svglite)
 
-# data <- read_dta("data/ZA4994.dta")
-# series <- data[[column_label_2009]]
-# print(series)
-# summary(data$v205)
-# length(data$v205)
-# data$v205
-# data[["v205"]]
-
 path_2008 <- "ZA4819"
 column_label_2008 <- "v233"
 

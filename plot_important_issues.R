@@ -6,9 +6,9 @@ library(ggplot2)
 library(gridExtra)
 library(svglite)
 
-path_2012 <- "data/ZA5685_v2-0-0.dta"
-path_2014 <- "data/ZA5932_v3-0-0.dta"
-path_2016 <- "data/ZA6788_v2-0-0.dta"
+path_2012 <- "data/ZA5685.dta"
+path_2014 <- "data/ZA5932.dta"
+path_2016 <- "data/ZA6788.dta"
 
 column_labels_2012 <- c("qa5a_1", "qa5a_2", "qa5a_3" ,"qa5a_4", "qa5a_5",
                         "qa5a_6", "qa5a_7", "qa5a_8" ,"qa5a_9", "qa5a_10",
@@ -78,7 +78,7 @@ p <- ggplot(df, aes(x = Variable, y = Percentage, fill = Year)) +
 
 print(p)
 
-ggsave("plot.svg", plot = p, dpi = 800, width = 10, height = 6)
+ggsave("plot_important_issues.svg", plot = p, dpi = 800, width = 10, height = 6)
 
 
 
